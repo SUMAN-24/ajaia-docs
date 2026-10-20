@@ -1,0 +1,7 @@
+**/node_modules
+client/dist
+server/data
+server/test
+docs
+*.db*
+.git

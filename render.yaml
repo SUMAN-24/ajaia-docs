@@ -1,0 +1,18 @@
+# Render Blueprint: New + > Blueprint, point at the repo containing this file.
+# Free plan = ephemeral disk: data resets on redeploy/restart, demo users are re-seeded automatically.
+# To keep data, switch to a paid plan and uncomment the disk block (DB_PATH must live on the disk).
+services:
+  - type: web
+    name: ajaia-docs
+    runtime: docker
+    plan: free
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DB_PATH
+        value: /data/docs.db
+    # disk:
+    #   name: docs-data
+    #   mountPath: /data
+    #   sizeGB: 1

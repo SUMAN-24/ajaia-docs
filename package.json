@@ -1,0 +1,15 @@
+{
+  "name": "ajaia-docs",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Lightweight collaborative document editor (React + Express + SQLite)",
+  "scripts": {
+    "setup": "npm install --prefix server && npm install --prefix client",
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client",
+    "build": "npm run build --prefix client",
+    "start": "npm run build && npm start --prefix server",
+    "test": "npm test --prefix server && npm test --prefix client"
+  },
+  "engines": { "node": ">=20" }
+}

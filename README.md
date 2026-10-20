@@ -80,7 +80,7 @@ All seeded users share the password **`password123`**. The login page has one-cl
 
 **Working end to end:** everything in the table above, verified by automated tests and by hand in a browser.
 
-**Deployment:** the repo contains a `Dockerfile` and `render.yaml` (Render Blueprint). **I could not deploy it from this environment** (no hosting account here, and Docker isn't installed locally so the image build is untested). See [SUBMISSION.md](SUBMISSION.md) for the live-URL placeholder and the exact steps; the app itself is a single process, so any Node or Docker host works. On Render's free plan the disk is ephemeral: data resets on redeploy and the demo users/sample doc are re-seeded automatically.
+**Deployment:** deployed on Render from the included `Dockerfile` / `render.yaml`; the live URL and deploy steps are in [SUBMISSION.md](SUBMISSION.md). The app is a single process, so any Node or Docker host works. On Render's free plan the disk is ephemeral: data resets on redeploy and the demo users/sample doc are re-seeded automatically.
 
 **Intentionally not built** (see [ARCHITECTURE.md](ARCHITECTURE.md) for why):
 - Real-time co-editing (CRDT/OT). Concurrent edits are detected and surfaced rather than merged.

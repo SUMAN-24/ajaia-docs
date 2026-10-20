@@ -1,0 +1,10 @@
+Video walkthrough link: https://drive.google.com/file/d/1kZfM29Mbsa8GCe4SwiZzc3BSN8iu07g5/view?usp=sharing
+
+The assignment's checklist:
+
+1.  Main flow: sign in as Alice -> create a document -> rename -> format (bold, heading, list) -> watch autosave -> refresh to show persistence.
+2.  Upload: dashboard "Upload file" with a .md/.docx -> new editable doc; "Import file" inside the editor. Mention supported types (.txt, .md, .docx, 5 MB).
+3.  Sharing: Share dialog -> add Carol as viewer. Second window as Carol: "Shared with me" badge, read-only editor. Switch to editor -> live upgrade; edit -> Alice sees it.
+4.  Decisions: ARCHITECTURE.md highlights (TipTap + HTML storage, server-side sanitising, resolveAccess, optimistic concurrency, polling instead of CRDTs).
+5.  Deprioritised: real-time co-editing, sign-up, version history, export, tables/images.
+6.  AI: Claude Code for scaffolding/tests/browser verification; two real bugs it introduced and how they were caught (setEditable emitting updates; snippet spacing).
